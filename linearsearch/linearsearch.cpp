@@ -3,7 +3,7 @@ using namespace std;
 
 int arr[20]; // Array to be searched
 int n; // Number of elements in the array
-int j; // Index of array element
+int i; // Index of array element
 
 
 void input()
@@ -17,5 +17,14 @@ void input()
 		else
 			cout << "\nArray should have minimum 1 and maximum 20 element.\n\n";
 	}
-
+	// Accept Array  Element
+	cout << "\n---------------------\n";
+	cout << " Enter Array Element \n";
+	cout << "---------------------\n";
+	for (i = 0; i < n; i++)
+	{
+		cout << "<" << (i + 1) << "> ";
+		cin >> arr[i];
+	}
 }
+
