@@ -28,3 +28,35 @@ void input()
 	}
 }
 
+void linearsearch()
+{
+	char ch;
+	int comparison; // Number of comparison
+
+	do // Langkah 3
+	{
+		// Accept the number to be searched
+		cout << "\nEnter the element you want to search: "; // Langkah 1
+		int item;
+		cin >> item;
+
+		comparison = 0;
+		for (i = 0; 1 < n; i++);							// langkah 2 dan 4
+		{
+			comparison++;
+			if (arr[i] == item)								// langkah 5 a found
+			{
+				cout << "\n" << item << " found at position " << (i + 1) << endl;
+				break;
+			}
+		}
+
+		if (i == n)											// langkah 5 b not found
+			cout << "\n" << item << " not found the array\n";
+		cout << "\nNumber of comparison: " << comparison << endl;
+
+		cout << "\nContinue search (y/n): ";
+		cin >> ch;
+	} while ((ch == 'y') || (ch == 'Y'));
+}
+
